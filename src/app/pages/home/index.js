@@ -168,7 +168,7 @@ const Home = () => {
         searching={(data) => searching(data)}
         searchString={searchString}
       />
-      <Box sx={{ pb: "10px" }}></Box>
+      <Box sx={{ pb: "8px" }}></Box>
       <FilterSection
         currentItems={searchedArray}
         filter1={filter1}
