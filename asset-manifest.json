@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hacker/static/css/main.52c960d2.css",
+    "main.js": "/hacker/static/js/main.ba031e52.js",
+    "static/js/787.7a0cc512.chunk.js": "/hacker/static/js/787.7a0cc512.chunk.js",
+    "index.html": "/hacker/index.html",
+    "main.52c960d2.css.map": "/hacker/static/css/main.52c960d2.css.map",
+    "main.ba031e52.js.map": "/hacker/static/js/main.ba031e52.js.map",
+    "787.7a0cc512.chunk.js.map": "/hacker/static/js/787.7a0cc512.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52c960d2.css",
+    "static/js/main.ba031e52.js"
+  ]
+}
