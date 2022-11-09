@@ -1,0 +1,41 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+.news{
+    padding: 25px;
+
+    &__heading {
+        @include text($font_regular, 20px, 600, 10px, 0.5);
+        color: $secondary_background;
+    }
+
+    &__section{
+        padding-top: 20px;
+
+        &__time{
+        @include text($font_regular, 12px, normal, 17px, 0.5);
+        color: $grey !important;
+        }
+
+        &__title{
+            @include text($font_regular, 18px, 600, 20px, 0.5);
+
+          &:hover{
+            color:$secondary_background;
+            cursor: pointer;
+
+          }
+        }
+        &__link{
+            @include text($font_regular, 14px, normal, 20px, 0.5);
+            font-style: italic;
+            color:rgb(56, 128, 211);
+            cursor: pointer;
+        }
+        &__desc{
+            @include text($font_regular, 15px, normal, 20px, 0.5);
+            color: $grey !important;
+            margin-top: 3px
+        }
+    }
+}

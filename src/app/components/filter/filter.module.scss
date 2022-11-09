@@ -1,0 +1,37 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+
+.filter {
+    width: 100%;
+    padding: 15px;
+    flex-flow: wrap;
+    @include flexCustom(flex-start, center);
+    &__title {
+        @include text($font_regular, 16px, normal, 10px, 0.5)
+
+    }
+
+    // &__options{
+    //     padding:5px !important;
+    //     @include text($font_regular, 14px, normal, 10px, 0.5);
+    //     color: $grey;
+    //     border: 1px solid $primary_background;
+    //     border-radius: 4px;
+    //     transition-delay: 0.3s ease-in-out;
+
+    //     &__list{
+    //         padding:5px;
+    //         @include text($font_regular, 14px, normal, 10px, 0.5);
+    //     }
+    // }
+}
+
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+    // padding:5px !important;
+    @include text($font_regular, 14px, normal, 10px, 0.5);
+    color: $grey !important;
+    border: 1px solid $primary_background !important;
+    border-radius: 4px !important;
+}

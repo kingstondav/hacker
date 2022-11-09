@@ -1,0 +1,127 @@
+@import './variables.scss';
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin verticalCenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+@mixin coverParentWidthHeight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin horizontalScollPane {
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+@mixin flexCenter {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCustom($justify, $alignitems) {
+  display: flex !important;
+  justify-content: $justify !important;
+  align-items: $alignitems !important;
+}
+
+@mixin text($family, $size, $weight, $height, $spacing) {
+  font-family: $family !important;
+  font-size: $size !important;
+  font-weight: $weight !important;
+  line-height: $height !important;
+  letter-spacing: $spacing !important;
+}
+
+@mixin commonLayoutWidth {
+  width: 85%;
+  margin: auto;
+}
+
+@mixin commonLayoutMobileWidth {
+  width: 100%;
+  margin: 0;
+}
+
+@mixin commonSectionLayoutFullWidth {
+  width: 100%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+}
+
+@mixin BgTexture {
+  background-image: url('../assets/images/bg-texture.png');
+  background-repeat: repeat;
+}
+
+@mixin boxShadowHeader {
+  box-shadow: -1px 7px 20px 1px rgb(0 0 0 / 25%);
+}
+
+@mixin PaymentSubSection {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  background-color: $color_white;
+  margin: 0 0 2rem;
+}
+
+@mixin containerDesHeight{
+  height: calc(100% - 75px);
+  overflow-y: auto;
+}
+
+@mixin containerMobHeight{
+  height: 100%;
+  overflow-y: auto;
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width !important;
+  height: $height !important;
+}
+
+@mixin ButtonLayout{
+  background-color: $secondary_background !important;
+  border-radius: 22px !important;
+  padding: 15px 28px !important;
+  color: $experience !important;
+  border: 1px solid $secondary_background !important;
+}
+
+@mixin ButtonLayoutHover{
+  background-color: $experience !important;
+  border-radius: 22px !important;
+  padding: 15px 28px !important;
+  color: $secondary_background !important;
+  border: 1px solid $secondary_background !important;
+
+}
+
+@mixin InputUserSelectInitial {
+  -webkit-user-select: initial;
+  -khtml-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+
+@mixin WebkitHideScrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+  background: transparent;
+}

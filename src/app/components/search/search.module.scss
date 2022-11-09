@@ -1,0 +1,21 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+
+.searchBar{
+    width: 100%;
+    margin-left: 15px;
+    &__in{
+        height: 42px;
+        background-color: $background !important;
+        // border-radius: 10px !important;
+        color: $primary_background;
+        border: none !important;
+        @include text($font_regular, $font_primary, normal, 14.4px, 0.1px);
+    }
+
+    &__icon{
+        font-size: 18px !important;
+        color: $secondary_background !important;
+    }
+}

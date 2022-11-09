@@ -1,0 +1,32 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+.header {
+    @include widthHeight(100%, 60px);
+    background-color: $secondary_background  !important;
+    padding: 5px;
+    box-shadow: none !important;
+
+    &__logo {
+        @include widthHeight(48px, 48px);
+        margin-right: 10px;
+
+        &__title {
+            @include text($font_regular, 18px, normal, 10px, 0.5)
+        }
+    }
+
+    &__user {
+        margin-left: 3% !important;
+    }
+}
+
+@media only screen and (min-device-width: 380px) and (max-device-width: 1024px) {
+    .header {
+        &__logo {
+            &__title {
+                display: none;
+            }
+        }
+    }
+}

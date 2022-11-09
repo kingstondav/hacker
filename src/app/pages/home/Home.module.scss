@@ -1,0 +1,16 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+.homeSection {
+    width: 80%;
+    background-color: $background !important;
+    margin : 0 auto !important;
+}
+
+
+
+@media only screen and (min-device-width: 380px) and (max-device-width: 1024px) {
+    .homeSection {
+    width: 100%;
+    }
+}

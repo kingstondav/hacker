@@ -1,0 +1,59 @@
+@import '../../../stylesheets/variables.scss';
+@import '../../../stylesheets/mixins.scss';
+
+.pagination{
+    width: 20%;
+    @include flexCustom(space-evenly, center);
+    cursor: pointer;
+    margin: 0 auto !important;
+    padding-bottom: 20px !important;
+}
+
+.loadmore{
+    padding: 6px;
+    cursor: pointer;
+    @include flexCenter;
+    border: 1px solid $secondary_background;
+    @include text($font_regular, 12px, normal, 17px, 0.5);
+    color: $secondary_background;
+    background-color: #ffffff;
+    width: 10%;
+    margin: 0 auto !important;
+    border-radius: 4px;
+    &:hover {
+    background-color: $secondary_background;
+    color: $black;
+    }
+}
+
+.numbers{
+    @include text($font_regular, 15px, normal, 17px, 0.5);
+
+}
+
+.btn{
+    padding: 7px 5px 5px 5px;
+    border: 1px solid $secondary_background;
+    @include text($font_regular, 12px, normal, 17px, 0.5);
+    color: $secondary_background;
+    background-color: #ffffff;
+    border-radius: 4px;
+    &:hover{
+        background-color: $secondary_background;
+        color: $black;
+        }
+}
+
+
+@media only screen and (min-device-width: 380px) and (max-device-width: 1024px) {
+    .pagination{
+        width: 70%;
+     
+    }
+
+    .loadmore{
+
+        width: 20%;
+
+    }
+}
